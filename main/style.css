@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body {
+    background: linear-gradient(to right, #273050, #0f2fa1);
+}
+.nav-bar {
+    width: 100%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-bar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    cursor: pointer;
+    color: #fff;
+}
+.nav-bar ul li a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.nav-bar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #910b0b;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.nav-bar ul li:hover::after {
+    width: 100%;
+}
+.tutorial {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    top: 45%;
+    position: absolute;
+    width: 100%;
+}
+.h1 {
+    font-size: 100px;
+    font-family: monospace;
+    color: #fff;
+    cursor: pointer;
+}
+.h1:hover {
+    font-size: 120px;
+    transform: scale(1.1);;
+}
