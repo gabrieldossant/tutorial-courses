@@ -5,6 +5,7 @@
 }
 body {
     background: linear-gradient(to right, #273050, #0f2fa1);
+    background-position: center;
 }
 .nav-bar {
     width: 100%;
@@ -31,7 +32,7 @@ body {
     content: '';
     height: 3px;
     width: 0;
-    background: #910b0b;
+    background: #040465;
     position: absolute;
     left: 0;
     bottom: -10px;
@@ -39,6 +40,7 @@ body {
 }
 .nav-bar ul li:hover::after {
     width: 100%;
+    font-weight: bolder;
 }
 .tutorial {
     display: flex;
@@ -47,14 +49,24 @@ body {
     top: 45%;
     position: absolute;
     width: 100%;
+    flex-direction: column;
 }
 .h1 {
     font-size: 100px;
     font-family: monospace;
     color: #fff;
     cursor: pointer;
+    transition: 1.5;
 }
 .h1:hover {
     font-size: 120px;
     transform: scale(1.1);;
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+.sub {
+    color: #fff;
+    padding: 20px;
+    top: 20px;
 }
